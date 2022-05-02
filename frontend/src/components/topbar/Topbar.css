@@ -1,0 +1,104 @@
+.topBarContainer {
+  background-color: #2c517c;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.topBarLeft {
+  /* flex-growは、親要素のflexコンテナの余っているスペースを、子要素のflexアイテムに分配して、flexアイテムを伸ばすプロパティです。
+flex-growの値は整数値のみで、flexアイテムが伸びる比率を指定します。 */
+  flex: 3; /* 3/12(3.5.4) */
+}
+
+.topBarCenter {
+  /* 単位がない数値を 1 つ指定: flex-grow */
+  flex: 5;
+}
+
+.topBarRight {
+  /* 「flex: 1;」は、 「flex-grow: 1; flex-shrink: 1;(デフォルト) flex-basis: 0;」のショートハンド（省略形） */
+  /* このプロパティは、フレックスコンテナー内の残りの空間のうち、どれだけがそのアイテムに割り当てられるか (フレックス伸長係数) を設定 */
+  flex: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  /* background-color: red; */
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: all 1s;
+}
+.logo:hover {
+  color: aqua;
+  cursor: pointer;
+}
+
+.searchBar {
+  width: 100%;
+  height: 30px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+}
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.searchInput {
+  border: none;
+
+  width: 80%;
+}
+/* :focus は CSS の擬似クラスで、フォーカスを持っている (フォームの input のような) 要素を表します */
+.searchInput:focus {
+  outline: none;
+}
+
+.topBarIcon {
+  display: flex;
+}
+
+.topBarIconItem {
+  cursor: pointer;
+  margin-right: 15px;
+  position: relative;
+  /* background-color: aqua; */
+  margin-top: 5px;
+}
+
+.topBarImg {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+  /* 置換コンテンツはアスペクト比を維持したまま、要素のコンテンツボックス全体を埋めるように拡大縮小されます。オブジェクトのアスペクト比がボックスのアスペクト比と合わない場合は、オブジェクトの方が合うように切り取られます。 */
+  object-fit: cover;
+}
+
+.topBarIconBadge {
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  background-color: #db6ab9;
+}

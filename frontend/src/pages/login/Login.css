@@ -1,0 +1,117 @@
+.login {
+  width: 100%;
+  height: 100vh;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 70%;
+  height: 70%;
+  display: flex;
+}
+
+.loginLeft,
+.loginRight {
+  /* 1:1  flex-growはflexアイテムを伸ばす比率のため、「flex-grow: 1;」をそれぞれのflexアイテムに指定した場合は空きスペースが2分割（半分）され、その2分割された空きスペースが分配されます。*/
+  flex: 1;
+  display: flex;
+  /* 積み重なるように配置する  */
+  flex-direction: column;
+  /* 逆に上下の中央ぞろえ*/
+  justify-content: center;
+}
+.loginLogo {
+  font-size: 50px;
+  font-weight: 800;
+  color: #00bfff;
+  margin-bottom: 10px;
+  transition: all 0.8s;
+}
+
+.loginLogo:hover {
+  color: palevioletred;
+  cursor: pointer;
+}
+
+.loginDesc {
+  font-size: 25px;
+}
+
+.loginBox {
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 6px 9px 17px -9px #787878;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.loginInput {
+  height: 50px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: 1px solid gray;
+  padding-left: 20px;
+  margin-bottom: 15px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginButton {
+  border-radius: 10px;
+  border: none;
+  background-color: teal;
+  height: 50px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.8s;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.loginButton:hover {
+  background-color: palevioletred;
+}
+
+.loginForgot {
+  display: inline-block;
+  text-align: center;
+  color: teal;
+  margin-top: 15px;
+}
+
+.loginRegisterButton {
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  color: white;
+  background-color: #00bfff;
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  transition: all 0.8s;
+  width: 60%;
+  /* 親要素に display: flex;
+  flex-direction: columnで逆になり、 align-selfで横に中央  */
+  /* 「align-self」を使うと、指定した要素のみ上下方向で位置することができます。 */
+  align-self: center;
+}
+
+.loginRegisterButton:hover {
+  background-color: palevioletred;
+}
+
+.loginMessage {
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}

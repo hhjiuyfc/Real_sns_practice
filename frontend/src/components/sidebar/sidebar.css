@@ -1,0 +1,69 @@
+.sidebar {
+  flex: 2.5;
+  height: 100vh;
+}
+
+.sidebarWrapper {
+  /* background-color: red; */
+  padding: 20px;
+}
+
+.sidebarList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebarListItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 4px 6px;
+  cursor: pointer;
+  box-shadow: 6px 9px 17px -9px #787878;
+  border-radius: 10px;
+  transition: all 0.5s;
+  /* 折り返さない */
+  white-space: nowrap;
+}
+
+.sidebarListItem:hover {
+  box-shadow: none;
+  transform: translateY(5px);
+}
+
+.sidebarFriendImg {
+  width: 32px;
+  height: 32px;
+}
+
+.sidebarIcon {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.sidebarListItemText {
+  font-size: 20px;
+  padding-top: 3px;
+}
+.sidebarHr {
+  margin: 20px 0;
+}
+
+.sidebarFriendList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.sidebarFriend {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.sidebarFriendImg {
+  object-fit: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
